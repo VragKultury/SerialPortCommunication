@@ -14,6 +14,7 @@ namespace RF_Control
     {
         int channel;
         ushort attenuation = MainForm.Attenuator_val;
+        ushort band = MainForm.Filters_band;
         
         public WorkMode()
         {
@@ -33,6 +34,8 @@ namespace RF_Control
                 channel = 1;
             }
             this.Channel_TB.Text = channel.ToString("G");
+            this.FilterBand_Scroll.Value = band;
+            this.FilterBand_text.Text = "Ширина полосы фильтра: " + band.ToString("D");
         }
 
         private void Channel_KeyPress(object sender, KeyPressEventArgs e)
@@ -83,9 +86,8 @@ namespace RF_Control
             MainForm.comm.DisplayWindow = this.Message_RTB;
             MainForm.comm.WriteData(_msg.ToString("X8"));
             this.Message_RTB.Text += Environment.NewLine;
-            this.Message_RTB.SelectionStart = this.Message_RTB.Text.Length; // перемещаемся в конец текста
+            this.Message_RTB.SelectionStart = this.Message_RTB.Text.Length;
             ((MainForm)this.Owner).workMode_text.Text = "Sending Packet: " + _msg.ToString("X8");
-//            this.Message_RTB.Text = _msg.ToString("X8") + Environment.NewLine + this.Message_RTB.Text;
         }
 
         private void Decline_button_Click(object sender, EventArgs e)
@@ -95,8 +97,15 @@ namespace RF_Control
 
         public int Local_MSG_Format()
         {
-            int _pkg = 9 + (channel << 10) + (attenuation << 5);
+            int _pkg = 9 + (channel << 14) + (band << 9) + (attenuation << 4);
             return _pkg;
+        }
+
+        private void FilterBand_Scroll_Scroll(object sender, ScrollEventArgs e)
+        {
+            band = (ushort)this.FilterBand_Scroll.Value;
+            MainForm.Filters_band = band;
+            this.FilterBand_text.Text = "Ширина полосы фильтра: " + band.ToString("D");
         }
     }
 }

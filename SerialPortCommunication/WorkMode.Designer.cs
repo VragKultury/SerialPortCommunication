@@ -42,6 +42,10 @@
             this.Attenuation_UD = new System.Windows.Forms.NumericUpDown();
             this.Attenuation_text = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BandFilter_GB = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.FilterBand_Scroll = new System.Windows.Forms.HScrollBar();
+            this.FilterBand_text = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -49,6 +53,8 @@
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Attenuation_UD)).BeginInit();
+            this.BandFilter_GB.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -104,7 +110,7 @@
             this.tableLayoutPanel2.Controls.Add(this.Accept_button, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Decline_button, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 195);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 245);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -137,31 +143,34 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Message_RTB, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.Message_RTB, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.BandFilter_GB, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(184, 232);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(184, 282);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Message_RTB
             // 
             this.Message_RTB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Message_RTB.Location = new System.Drawing.Point(3, 118);
+            this.Message_RTB.Location = new System.Drawing.Point(3, 189);
             this.Message_RTB.Name = "Message_RTB";
             this.Message_RTB.ReadOnly = true;
-            this.Message_RTB.Size = new System.Drawing.Size(178, 71);
+            this.Message_RTB.Size = new System.Drawing.Size(178, 50);
             this.Message_RTB.TabIndex = 2;
             this.Message_RTB.Text = "";
             // 
@@ -218,18 +227,68 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 102);
+            this.label1.Location = new System.Drawing.Point(3, 173);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Отсылаемый пакет:";
+            // 
+            // BandFilter_GB
+            // 
+            this.BandFilter_GB.Controls.Add(this.tableLayoutPanel5);
+            this.BandFilter_GB.Location = new System.Drawing.Point(3, 105);
+            this.BandFilter_GB.Name = "BandFilter_GB";
+            this.BandFilter_GB.Size = new System.Drawing.Size(178, 65);
+            this.BandFilter_GB.TabIndex = 5;
+            this.BandFilter_GB.TabStop = false;
+            this.BandFilter_GB.Text = "Полоса фильтра";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.AutoSize = true;
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Controls.Add(this.FilterBand_Scroll, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.FilterBand_text, 0, 1);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(172, 41);
+            this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // FilterBand_Scroll
+            // 
+            this.FilterBand_Scroll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FilterBand_Scroll.LargeChange = 8;
+            this.FilterBand_Scroll.Location = new System.Drawing.Point(3, 3);
+            this.FilterBand_Scroll.Margin = new System.Windows.Forms.Padding(3);
+            this.FilterBand_Scroll.Maximum = 39;
+            this.FilterBand_Scroll.Minimum = 1;
+            this.FilterBand_Scroll.Name = "FilterBand_Scroll";
+            this.FilterBand_Scroll.Size = new System.Drawing.Size(166, 17);
+            this.FilterBand_Scroll.TabIndex = 0;
+            this.FilterBand_Scroll.Value = 1;
+            this.FilterBand_Scroll.Scroll += new System.Windows.Forms.ScrollEventHandler(this.FilterBand_Scroll_Scroll);
+            // 
+            // FilterBand_text
+            // 
+            this.FilterBand_text.AutoSize = true;
+            this.FilterBand_text.Location = new System.Drawing.Point(3, 28);
+            this.FilterBand_text.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.FilterBand_text.Name = "FilterBand_text";
+            this.FilterBand_text.Size = new System.Drawing.Size(136, 13);
+            this.FilterBand_text.TabIndex = 1;
+            this.FilterBand_text.Text = "Ширина полосы фильтра:";
             // 
             // WorkMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(184, 232);
+            this.ClientSize = new System.Drawing.Size(184, 282);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
@@ -249,6 +308,10 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Attenuation_UD)).EndInit();
+            this.BandFilter_GB.ResumeLayout(false);
+            this.BandFilter_GB.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -269,6 +332,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox BandFilter_GB;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.HScrollBar FilterBand_Scroll;
+        private System.Windows.Forms.Label FilterBand_text;
 
     }
 }

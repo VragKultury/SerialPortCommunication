@@ -107,10 +107,12 @@
             this.Filters_ScrollBar.LargeChange = 1;
             this.Filters_ScrollBar.Location = new System.Drawing.Point(5, 5);
             this.Filters_ScrollBar.Margin = new System.Windows.Forms.Padding(5);
-            this.Filters_ScrollBar.Maximum = 31;
+            this.Filters_ScrollBar.Maximum = 32;
+            this.Filters_ScrollBar.Minimum = 1;
             this.Filters_ScrollBar.Name = "Filters_ScrollBar";
             this.Filters_ScrollBar.Size = new System.Drawing.Size(17, 198);
             this.Filters_ScrollBar.TabIndex = 0;
+            this.Filters_ScrollBar.Value = 1;
             this.Filters_ScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Att_ScrollBar_Scroll);
             // 
             // tableLayoutPanel2
