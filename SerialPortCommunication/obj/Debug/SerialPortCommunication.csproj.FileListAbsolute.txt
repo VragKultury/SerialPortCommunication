@@ -1,0 +1,48 @@
+C:\asm\C#COM-port\SerialPortCommunication\bin\Debug\SerialPortCommunication.exe.config
+C:\asm\C#COM-port\SerialPortCommunication\obj\Debug\SerialPortCommunication.exe
+C:\asm\C#COM-port\SerialPortCommunication\obj\Debug\SerialPortCommunication.pdb
+C:\asm\C#COM-port\SerialPortCommunication\bin\Debug\SerialPortCommunication.exe
+C:\asm\C#COM-port\SerialPortCommunication\bin\Debug\SerialPortCommunication.pdb
+C:\asm\C#COM-port\SerialPortCommunication\obj\Debug\ResolveAssemblyReference.cache
+C:\asm\C#COM-port\SerialPortCommunication\obj\Debug\PCComm.frmMain.resources
+C:\asm\C#COM-port\SerialPortCommunication\obj\Debug\PCComm.Properties.Resources.resources
+C:\asm\C#COM-port\SerialPortCommunication\obj\Debug\GenerateResource.read.1.tlog
+C:\asm\C#COM-port\SerialPortCommunication\obj\Debug\GenerateResource.write.1.tlog
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\bin\Debug\SerialPortCommunication.exe.config
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\bin\Debug\SerialPortCommunication.exe
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\bin\Debug\SerialPortCommunication.pdb
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\PCComm.frmMain1.resources
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\PCComm.Properties.Resources.resources
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\SerialPortCommunication.csproj.GenerateResource.Cache
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\SerialPortCommunication.exe
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\SerialPortCommunication.pdb
+D:\WORK\SOURCES\Zaliv\VS\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\SerialPortCommunication.csprojResolveAssemblyReference.cache
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\SerialPortCommunication.csprojResolveAssemblyReference.cache
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\SerialPortCommunication.csproj.GenerateResource.Cache
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\bin\Debug\COM2timersControl.exe.config
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\COM2timers.ComPortForm.resources
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\COM2timers.TimerForm.resources
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\COM2timers.MainForm.resources
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\bin\Debug\COM2timersControl.exe
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\bin\Debug\COM2timersControl.pdb
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\COM2timersControl.exe
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\COM2timersControl.pdb
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\COM2timers.TestMsgForm.resources
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\COM2timers.MsgFormatForm.resources
+D:\TEMP\YandexDisk\6 - DSP\PC\CSharp-VB-COM-port\C#\SerialPortCommunication\obj\Debug\COM2timers.Properties.Resources.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\SerialPortCommunication.csproj.GenerateResource.Cache
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\bin\Debug\RF_Control_i2c.exe.config
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\bin\Debug\RF_Control_i2c.exe
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\bin\Debug\RF_Control_i2c.pdb
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\SerialPortCommunication.csprojResolveAssemblyReference.cache
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.Properties.Resources.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control_i2c.exe
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control_i2c.pdb
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.AttenuatorForm.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.ComPortForm.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.FiltersForm.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.LowpassForm.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.TestMsgForm.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.ModulatorForm.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.MainForm.resources
+D:\WORK\SOURCES\Axion\PC_App\SerialPortCommunication\obj\Debug\RF_Control.WorkMode.resources
